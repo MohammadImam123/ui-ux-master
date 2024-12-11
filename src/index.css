@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-Poppins;
+}
+
+body.active {
+  @apply h-screen overflow-hidden;
+}
+
+::-webkit-scrollbar {
+  @apply w-0;
+}
+
+h1.large {
+  @apply xl:text-9xl lg:text-8xl md:text-6xl sm:text-5xl text-4xl md:!leading-[.9em] !leading-[1.em] font-bold;
+}
+
+h2 {
+  @apply xl:text-5xl md:text-4xl text-3xl font-Kanit font-medium;
+}
+h3 {
+  @apply xl:text-4xl md:text-3xl text-2xl font-Kanit font-medium;
+}
+
+h4 {
+  @apply xl:text-3xl md:text-2xl text-xl font-Kanit font-medium;
+}
+
+.scroll-one::-webkit-scrollbar {
+  @apply w-[6px];
+}
+
+h5 {
+  @apply lg:text-lg text-base font-medium;
+}
+
+.shadow_1 {
+  box-shadow: rgba(149, 157, 165, 0.15) 0px 8px 24px;
+}
+.shadow_2 {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.gradient_one {
+  background: linear-gradient(270deg, #4f46e5 50%, #fff 50%);
+}
+
+.clip_path_one {
+  clip-path: polygon(90% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
+}
+
+/* HERO  */
+
+.hero_img_wrapper::before {
+  @apply md:hidden content-[""] absolute inset-0 bg-gradient-to-t from-indigo-600 via-transparent to-transparent;
+}
+
+/* HEADER  */
+.nav_items li button {
+  @apply text-gray-600 text-base font-medium;
+}
+
+.mobile_menu li button {
+  @apply text-lg text-gray-800 font-medium leading-none;
+}
+
+/* Experience  */
+.experience::before {
+  @apply content-[''] absolute top-0 -left-[31px] size-5 bg-white border-[2px] border-gray-800 rounded-full;
+}
+
+/* SERVICES  */
