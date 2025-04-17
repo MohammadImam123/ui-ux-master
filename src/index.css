@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+section{
+  overflow-x: hidden;
+}
+
 body.active {
   @apply h-screen overflow-hidden;
 }
